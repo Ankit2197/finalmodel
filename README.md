@@ -37,7 +37,7 @@ Split dataset into 70 % for Training and 30% for testing.
 **6.** After getting all the inputs finally predict the output using **app.route('/predict')**.
 
 ## Requirement:
-![image](https://user-images.githubusercontent.com/56593219/175295481-76829f59-9ccd-477c-921c-4d4a1f4072c9.png)
+![image]()
 to run the file:
 pip install -r requirements
 change the current working directory to where the files are present.
