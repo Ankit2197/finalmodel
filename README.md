@@ -67,4 +67,4 @@ To deploy in heroku we need extra file as Procfile.
 We have done the various EDA to see the insights of different dataset. Compared the GDP, Employment rate, PPI of different countries which can be seen through below links.
 
 **Browse link:**
-App link - # TeamB_Model_Deployment
+App link -herokudeploystock.herokuapp.com
