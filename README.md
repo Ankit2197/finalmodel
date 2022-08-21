@@ -45,7 +45,7 @@ flask run
 
 ## Deploy Our Model Using Heroku Platform:
 **User Interface**
-![image](https://github.com/Ankit2197/finalmodel/blob/main/Screenshot%20(18).png)
+![image](https://github.com/Ankit2197/finalmodel/blob/main/Screenshot%20(17).png)
 
 **Future Scope:**
 More analysis on economic indicators to see the impact on particular segment of market and stock price.
@@ -56,7 +56,7 @@ Addition classification column ("%risk") to be made to see whether at a particul
 
 **Output:**
 
-![image](https://github.com/Ankit2197/finalmodel/blob/main/Screenshot%20(17).png)
+![image](https://github.com/Ankit2197/finalmodel/blob/main/Screenshot%20(18).png)
 
 **Conclusion:**
 
