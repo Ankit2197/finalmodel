@@ -52,7 +52,7 @@ def stockpred(ticker,day):
    model.add(LSTM(50))
    model.add(Dense(1))
    model.compile(loss='mean_squared_error',optimizer='adam')
-   model.fit(X_train,y_train,validation_data=(X_test,ytest),epochs=05,batch_size=15,verbose=1)
+   model.fit(X_train,y_train,validation_data=(X_test,ytest),epochs=50,batch_size=15,verbose=1)
    def date(day):
      k=std_2[std_2["Date"]==str(day)].index.values
      print(std_2["Date"])
