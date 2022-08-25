@@ -8,9 +8,13 @@ We have used real-time data from yahoo finance to make model and prediction. Als
 
 ## Important Features
 *Open:*-Its the open share price of stock in a particular day.
+
 *High:*- Its the highest value of share recorded in a particular day.
+
 *Low:*- Its the lowest value of share recorded in a particular day.
-*Close:*-Its the closing share price in a particular day
+
+*Close:*-Its the closing share price in a particular day.
+
 *Volume:*- Its the number of bought and sold shares for a particular stock in a day.
 
 #### Target Variable
@@ -30,18 +34,28 @@ Split dataset into 70 % for Training and 30% for testing.
 
 **STEPS for FLASK web app development:**
 **1.** Importing required Libraries and intialize the flask object.
+
 **2.** We have created our web page using **HTML** and styling of web page using **CSS**.
+
 **3.** The date has to be taken input in date format.
+
 **4.** Now , we have to join our HTML and CSS page with web app using Flask **app.route('/')**.
+
 **5.** Now we take all the Inputs.
+
 **6.** After getting all the inputs finally predict the output using **app.route('/predict')**.
 
 **STEPS for STREAMLIT web app development:**
 **1.** Virtual enviornment venv is created to store all the required installation in one place.
+
 **2.** Importing required Libraries and intialize the streamlit object.
+
 **3.** We have installed the streamlit through pip install and used yahoo daily reader data for real-time data.
+
 **4.** The date has to be taken input in date format.
+
 **5.** Now we take date and ticker as the Inputs.
+
 **6.** After getting all the inputs finally press enter through keyboard for results.
 
 
@@ -82,4 +96,4 @@ To deploy in HEROKU we need extra file as Procfile for FLASK and setup.sh file f
 We have done the various EDA to see the insights of different dataset. Compared the GDP, Employment rate, PPI of different countries which can be seen through below links.
 
 **Browse link:**
-App link -herokudeploystock.herokuapp.com
+App link -https://flaskmodelheroku.herokuapp.com
