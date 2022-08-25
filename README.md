@@ -96,4 +96,6 @@ To deploy in HEROKU we need extra file as Procfile for FLASK and setup.sh file f
 We have done the various EDA to see the insights of different dataset. Compared the GDP, Employment rate, PPI of different countries which can be seen through below links.
 
 **Browse link:**
-App link -https://flaskmodelheroku.herokuapp.com
+Flask output App link -https://flaskmodelheroku.herokuapp.com
+
+Streamlit output App link - http://justinstreamlit.herokuapp.com/
