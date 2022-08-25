@@ -52,13 +52,9 @@ def stockpred(ticker,day):
    model.add(LSTM(50))
    model.add(Dense(1))
    model.compile(loss='mean_squared_error',optimizer='adam')
-   model.fit(X_train,y_train,validation_data=(X_test,ytest),epochs=50,batch_size=15,verbose=1)
+   model.fit(X_train,y_train,validation_data=(X_test,ytest),epochs=10,batch_size=15,verbose=1)
    def date(day):
      k=std_2[std_2["Date"]==str(day)].index.values
-     print(std_2["Date"])
-     print(std_2["Date"]=="2022-06-24")
-     print(day)
-     print(k)
      x=k[0]
      new_set=std_2.iloc[x-14:x+1,:]
      y= scaler.fit_transform(np.array(new_set[["Close"]]))
@@ -76,25 +72,18 @@ def stockpred(ticker,day):
    while(i<7):
     
     if(len(temp_input)>15):
-        #print(temp_input)
         x_input=np.array(temp_input[1:])
-        print("{} day input {}".format(i,x_input))
         x_input=x_input.reshape(1,-1)
         x_input = x_input.reshape((1, n_steps, 1))
-      #   print(x_input)
         yhat = model.predict(x_input, verbose=0)
-      #   print("{} day output {}".format(i,yhat))
         temp_input.extend(yhat[0].tolist())
         temp_input=temp_input[1:]
-      #   print(temp_input)
         lst_output.extend(yhat.tolist())
         i=i+1
     else:
         x_input = x_input.reshape((1, n_steps,1))
         yhat = model.predict(x_input, verbose=0)
-      #   print(yhat[0])
         temp_input.extend(yhat[0].tolist())
-      #   print(len(temp_input))
         lst_output.extend(yhat.tolist())
         i=i+1
    return scaler.inverse_transform(lst_output)
