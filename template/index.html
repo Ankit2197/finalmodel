@@ -18,7 +18,7 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
       <input type="text" name="ticker (yfinance)" placeholder="ticker" required="required" />
-      <input type="text" name="last closing date" placeholder="last closing date" required="required" />
+      <input type="text" name="last closing date" placeholder="Date->yyyy-mm-dd" required="required" />
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
 
